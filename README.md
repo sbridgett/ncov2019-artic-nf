@@ -5,6 +5,7 @@ WARNING - THIS REPO IS UNDER ACTIVE DEVELOPMENT AND ITS BEHAVIOUR MAY CHANGE AT 
 
 PLEASE ENSURE THAT YOU READ BOTH THE README AND THE CONFIG FILE AND UNDERSTAND THE EFFECT OF THE OPTIONS ON YOUR DATA! 
 
+This fork is to add option to write the QC failed consensus sequences to a "qc_FAIL_climb_upload" directory, so that the failed sequences can also be easily uploaded to the climb server.
 
 #### Introduction
 
