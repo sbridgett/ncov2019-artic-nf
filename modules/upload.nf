@@ -11,6 +11,7 @@ process collateSamples {
 
     script:
     """
+    echo "TEST SJB"
     mkdir ${sampleName}
     mv ${bam} ${fasta} ${sampleName}
     """
