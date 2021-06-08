@@ -10,6 +10,9 @@ process collateSamples {
     path("${sampleName}")
 
     script:
+    if ( ! sampleName ==~ /^NIRE-[0-9a-f]{6}(_S\d{1,3}_L00\d)?$/ )
+       file("${params.outdir}/SampleName_WARNINGS.txt").append("WARNING: sampleName ${sampleName} does NOT match your params.sampleNameRegex")
+
     """
     echo "TEST SJB"
     mkdir ${sampleName}
